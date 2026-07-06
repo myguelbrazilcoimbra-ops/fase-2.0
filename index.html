@@ -915,7 +915,7 @@
                     do {
                         food = {x: Math.floor(Math.random()*40), y: Math.floor(Math.random()*21)};
                     } while (body.some(s => s.x === food.x && s.y === food.y));
-                    speed = Math.max(110, 160 - biscuits * 2.5);
+                    speed = Math.max(120, 150 - biscuits * 2.0);
                     scheduleTick();
                     if (biscuits >= 10) {
                         clearInterval(snakeInterval);
